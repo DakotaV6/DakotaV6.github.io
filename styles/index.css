@@ -1,0 +1,38 @@
+/*********************
+    GLOBAL STYLES 
+**********************/
+
+/*********************
+   HEADER AND FOOTER 
+**********************/
+
+/*********************
+      NAVIGATION 
+**********************/
+
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /*border-bottom: solid (color) 5px;*/
+}
+
+/*********************
+        ROWS
+**********************/
+
+.rowOne {
+    float: left;
+    display: inline-block;
+
+}
+.rowTwo {
+    float: left;
+    display: inline-block;
+}
+
+/*********************
+    Media Queries 
+**********************/
