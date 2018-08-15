@@ -1,6 +1,28 @@
+/*         Google Fonts
+font-family: 'Crimson Text', serif;
+font-family: 'Amatic SC', cursive; 
+************************************/
+
 /*********************
     GLOBAL STYLES 
 **********************/
+html {
+    font-size: 1.15em;
+}
+
+body {
+    font-family: "Crimson Text", serif;
+}
+
+h1, h2 {
+    font-family: "Amatic SC", cursive;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.35rem;
+}
 
 /*********************
    HEADER AND FOOTER 
@@ -24,13 +46,17 @@ nav {
 **********************/
 
 .rowOne {
-    float: left;
     display: inline-block;
 
 }
 .rowTwo {
-    float: left;
     display: inline-block;
+}
+
+.animal {
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 /*********************
