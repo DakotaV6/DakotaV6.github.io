@@ -7,6 +7,7 @@ font-family: 'Amatic SC', cursive;
     GLOBAL STYLES 
 **********************/
 html {
+    box-sizing: border-box;
     font-size: 1.15em;
 }
 
@@ -22,6 +23,17 @@ h1 {
 }
 h2 {
     font-size: 1.35rem;
+}
+.content-wrap {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 60px 40px;
+
+}
+.colOne, .colTwo, .colThree {
+    display: inline-block;
+    margin: 0 auto;
+    width: 30%;
 }
 
 /*********************
@@ -45,17 +57,12 @@ nav {
         ROWS
 **********************/
 
-.rowOne {
-    display: inline-block;
-
-}
-.rowTwo {
-    display: inline-block;
-}
-
 .animal {
     border-radius: 50%;
     padding: 10px;
+    height: 300px;
+    width: 300px;
+    display: block;
     margin: 0 auto;
 }
 
