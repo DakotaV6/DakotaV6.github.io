@@ -1,0 +1,144 @@
+/***********/
+/* GENERAL */
+/***********/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0 20px;
+}
+.section-title {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 55px;
+    color: rgba(145, 0, 43, 1); 
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.header-fix {
+    height: 130px;
+}
+.header-anchor-fix {
+    position: relative;
+    left: 0;
+    top: -130px;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+header {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: rgba(189, 178, 189, 1);
+}
+#logo {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 75px;
+    margin: 0;
+    color: rgba(145, 0, 43, 1); 
+}
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(16, 20, 25, 1);
+    padding: 0 10px;
+}
+nav a:hover {
+    color: rgba(145, 0, 43, 1);
+}
+
+/*********/
+/* ABOUT */
+/*********/
+
+#about a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(16, 20, 25, 1);
+}
+#about a:hover {
+    color: rgba(145, 0, 43, 1);
+}
+
+/********/
+/* WORK */
+/********/
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+
+}
+.project-card {
+    position: relative;
+    margin: 10px 0;
+}
+.project-thumbnail {
+    width: 100%;
+}
+.project-details {
+    position: absolute;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(145, 0, 43, 0.5);
+}
+.project-details:hover {
+    display: block;
+}
+.language-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.language-container p {
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 5px 0 5px 15px;
+    color: rgba(189, 178, 189, 1);
+    background: linear-gradient(315deg, transparent 25%, rgba(58, 68, 84, 0.9) 0) bottom right;
+}
+
+
+/***********/
+/* CONTACT */
+/***********/
+
+#contact-section {
+    padding-bottom: 30px;
+}
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+}
+.fa-linkedin, .fa-github, .fa-at {
+    color: rgba(16, 20, 25, 1); 
+    font-size: 40px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+.fa-linkedin:hover, .fa-github:hover, .fa-at:hover {
+    color: rgba(145, 0, 43, 1);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
