@@ -10,9 +10,6 @@ angular
             .when("/nav", {
                 template: "<navigation></navigation>"
             })
-            .when("/social", {
-                template: "<social></social>"
-            })
             .when("/work", {
                 template: "<work></work>"
             });
