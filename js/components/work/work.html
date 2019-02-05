@@ -10,37 +10,16 @@
     </div>
 
     <div class="card-container max-width-container">
-        <!-- <div ng-repeat="card in $ctrl.projectCards" class="project-card">
-            <a href="$card.link" target="_blank">
-
-            </a>
-        </div> -->
-
-        <div class="project-card">
-            <a class="project-link" href="https://dakotav6.github.io/the-back-door-project/#home" target="_blank">
-                <span class="project-details">
-                    <div class="language-container">
-                        <p>CSS</p>
-                        <p>HTML</p>
-                        <p>jQuery</p>
-                    </div>
-                </span>
-                <img class="project-thumbnail" src="images/back-door-snap.PNG">
-                <span class="sr-only">Back Door Project Link</span>
-            </a>
-        </div>
-        <div class="project-card">
-            <a class="project-link" href="https://dakotav6.github.io/event-search-project-ng/#!/" target="_blank">
-                <span class="project-details">
-                    <div class="language-container">
-                        <p>CSS</p>
-                        <p>API</p>
-                        <p>AngularJS</p>
-                    </div>
-                </span>
-                <img class="project-thumbnail" src="images/angular-project-snap.PNG">
-                <span class="sr-only">Back Door Project Link</span>
-            </a>
+        <div proj-overlay class="project-card" ng-repeat="project in $ctrl.projectCards">
+            <img class="project-thumbnail" ng-src="{{project.img}}">
+            <div class="overlay hide">
+                <div class="project-info">
+                    <p class="project-name">{{project.name}}</p>
+                    <p class="project-description">{{project.description}}</p>
+                    <p><a class="fake-button" ng-href="{{project.url}}" target="_blank">View Project</a></p>
+                    <p class="project-github">View code on <a ng-href="{{project.github}}" target="_blank">GitHub</a></p>
+                </div>
+            </div>
         </div>
     </div>
 </section>

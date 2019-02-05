@@ -1,6 +1,7 @@
 /***********/
 /* GENERAL */
 /***********/
+
 html {
     box-sizing: border-box;
     font-size: 18px;
@@ -54,6 +55,15 @@ body {
     width: 100%;
     fill: rgba(239, 233, 244, 1);
 }
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(16, 20, 25, 1);
+}
+a:hover {
+    color: rgba(250, 114, 104, 1);
+}
+
 /**********/
 /* HEADER */
 /**********/
@@ -94,65 +104,78 @@ header {
     transform: rotate(360deg);
 }
 
-/*********/
-/* ABOUT */
-/*********/
-
-#about-section a {
-    text-decoration: none;
-    font-weight: 600;
-    color: rgba(16, 20, 25, 1);
-}
-#about-section a:hover {
-    color: rgba(250, 114, 104, 1);
-}
-
 /********/
 /* WORK */
 /********/
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    text-align: center;
+    overflow: hidden;
     margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0,0,0, 0.25);
+    transition: all 0.6s cubic-bezier(.25, .8, .25, 1);
+}
+.project-card:hover {
+    filter: brightness(107%);
+    border-radius: 15px;
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .project-thumbnail {
     width: 100%;
+    max-height: 380px;
     max-width: 500px;
 }
-.project-details {
+.hide {
     opacity: 0;
+    height: 0px;
+}
+.overlay {
+    display: flex;
+    align-items: center;
     position: absolute;
-    padding-bottom: 10px;
+    top: 0;
+    left: 0;
+    transition: all .4s ease-in-out;
     width: 100%;
     height: 100%;
-    background-color: rgba(145, 0, 43, 0.4);
+    background-color: rgba(239, 233, 244, 0.8);
 }
-.project-details:hover {
-    opacity: 1;
+.project-name {
+    font-weight: 900;
+    font-size: 1.5rem;
 }
-.language-container {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.project-description {
+    margin: 0 10px;
 }
-.language-container p {
-    font-weight: 600;
-    margin: 10px 0;
-    padding: 5px 0 5px 15px;
-    color: rgba(189, 178, 189, 1);
-    background: linear-gradient(315deg, transparent 25%, rgba(58, 68, 84, 0.9) 0) bottom right;
+.fake-button {
+    color: rgba(38, 48, 86, 1);
+    background-color: rgba(239, 233, 244, 1);
+    border-bottom: 4px solid rgba(38, 48, 86, 1);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 1.5rem;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.fake-button:hover {
+    color: rgba(250, 114, 104, 1);
+    border-bottom: 4px solid rgba(250, 114, 104, 1);
+}
+.project-github {
+    margin-top: 1.5rem;
 }
 
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
-
-/* @media only screen and (min-width: 720px) {
-    body {
-        font-size: 1rem;
-    }
-} */

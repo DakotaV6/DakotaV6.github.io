@@ -2,8 +2,10 @@
 
 const work = {
     templateUrl: "js/components/work/work.html",
-    controller: [function() {
+    controller: ["PortfolioService", function(PortfolioService) {
         const vm = this;
+
+        vm.projectCards = PortfolioService.getProjects();
     }]
 }
 
