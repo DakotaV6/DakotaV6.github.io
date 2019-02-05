@@ -37,6 +37,8 @@ body {
 .section-separator {
     position: absolute;
     bottom: 0;
+    height: 80px;
+    width: 100%;
 }
 .section-separator-top {
     position: absolute;
