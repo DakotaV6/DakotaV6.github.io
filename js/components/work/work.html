@@ -1,16 +1,28 @@
-<section id="work-section">
-    <a name="work" class="header-anchor-fix">&nbsp;</a>
+<section id="work-section" class="content-container odd-container">
 
-    <p class="section-title">my work</p>
+    <svg class="section-separator-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+    </svg>
+
+    <div class="section-header">
+        <p class="section-title">projects</p>
+        <img class="section-underline" src="/images/banner-2.svg">
+    </div>
+
     <div class="card-container">
+        <div ng-repeat="card in $ctrl.projectCards" class="project-card">
+            <a href="$card.link" target="_blank">
+
+            </a>
+        </div>
 
         <div class="project-card">
             <a class="project-link" href="https://dakotav6.github.io/the-back-door-project/#home" target="_blank">
                 <span class="project-details">
                     <div class="language-container">
-                    <p>CSS</p>
-                    <p>HTML</p>
-                    <p>jQuery</p>
+                        <p>CSS</p>
+                        <p>HTML</p>
+                        <p>jQuery</p>
                     </div>
                 </span>
                 <img class="project-thumbnail" src="images/back-door-snap.PNG">
@@ -18,18 +30,17 @@
             </a>
         </div>
         <div class="project-card">
-                <a class="project-link" href="https://dakotav6.github.io/event-search-project-ng/#!/" target="_blank">
-                    <span class="project-details">
-                        <div class="language-container">
+            <a class="project-link" href="https://dakotav6.github.io/event-search-project-ng/#!/" target="_blank">
+                <span class="project-details">
+                    <div class="language-container">
                         <p>CSS</p>
                         <p>API</p>
                         <p>AngularJS</p>
-                        </div>
-                    </span>
-                    <img class="project-thumbnail" src="images/angular-project-snap.PNG">
-                    <span class="sr-only">Back Door Project Link</span>
-                </a>
-            </div>
-
+                    </div>
+                </span>
+                <img class="project-thumbnail" src="images/angular-project-snap.PNG">
+                <span class="sr-only">Back Door Project Link</span>
+            </a>
+        </div>
     </div>
 </section>
