@@ -23,6 +23,12 @@ body {
     font-weight: 700;
     margin: 0;
 }
+.max-width-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1200px;
+}
 .content-container {
     padding: 0 1rem 100px 1rem;
     position: relative;
@@ -106,14 +112,16 @@ header {
 /********/
 .card-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .project-card {
     position: relative;
-    margin: 10px 0;
+    margin: 20px;
 }
 .project-thumbnail {
     width: 100%;
+    max-width: 500px;
 }
 .project-details {
     opacity: 0;
