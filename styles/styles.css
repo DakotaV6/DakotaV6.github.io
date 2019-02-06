@@ -12,7 +12,7 @@ html {
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 .section-header {
     width: 100%;
@@ -20,7 +20,7 @@ body {
 }
 .section-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     margin: 0;
 }
@@ -156,7 +156,7 @@ header {
     font-size: 1.5rem;
 }
 .project-description {
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 .fake-button {
     color: rgba(38, 48, 86, 1);
